@@ -5,4 +5,4 @@ install:
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release ServiceStackAngularUpload.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./ServiceStackAngularUpload.Tests/bin/Release/ServiceStackAngularUpload.Tests.dll
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./ServiceStackAngularUpload/ServiceStackAngularUpload.Tests/bin/Release/ServiceStackAngularUpload.Tests.dll
